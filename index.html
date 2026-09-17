@@ -372,16 +372,30 @@
 "https://docs.google.com/document/d/1nh7XZXRJ56MipZhoq2tHJWY-PijCaTKR/edit?usp=drive_link&ouid=109940531773990116794&rtpof=true&sd=true"  // ← TROQUE AQUI
       }
     ],
+
+ turma6: [ { 
+        nome: "📗 Video para Resumo", 
+        url:
+"https://www.youtube.com/watch?v=sOrUobwKOV8&list=RDsOrUobwKOV8&start_radio=1"    // ← TROQUE AQUI
+      },
+     { 
+       nome: "📗 Apostila do 5º Ano - Capítulo 1", 
+        url:
+"https://docs.google.com/document/d/1nh7XZXRJ56MipZhoq2tHJWY-PijCaTKR/edit?usp=drive_link&ouid=109940531773990116794&rtpof=true&sd=true"  // ← TROQUE AQUI
+      }
+    ],
+
   };
   /* ============================================================ */
   
   // ===== CONFIGURAÇÃO DAS 5 TURMAS =====
   const turmas = [
-    { id: 'turma1', nome: '1º Ano A', emoji: '1️⃣' },
-    { id: 'turma2', nome: '2º Ano A', emoji: '2️⃣' },
-    { id: 'turma3', nome: '3º Ano A', emoji: '3️⃣' },
-    { id: 'turma4', nome: '4º Ano A', emoji: '4️⃣' },
-    { id: 'turma5', nome: '5º Ano A', emoji: '5️⃣' }
+    { id: 'turma1', nome: '1º Semestre', emoji: '1️⃣' },
+    { id: 'turma2', nome: '2º Semestre', emoji: '2️⃣' },
+    { id: 'turma3', nome: '3º Semestre', emoji: '3️⃣' },
+    { id: 'turma4', nome: '4º Semestre', emoji: '4️⃣' },
+    { id: 'turma5', nome: '5º Semestre', emoji: '5️⃣' },
+    { id: 'turma6', nome: '6º Semestre', emoji: '6️⃣' }
   ];
   
   let turmaAtual = null;
@@ -397,7 +411,7 @@
     grid.innerHTML = turmas.map(t => `
       <div class="turma-card" id="card-${t.id}" onclick="abrirTurma('${t.id}')">
         <span class="badge" id="badge-${t.id}">0</span>
-        <div class="turma-icon">${t.emoji} Semestre </div>
+        <div class="turma-icon">${t.emoji}Semestre</div>
         <h3>${t.nome}</h3>
         <div class="info">Clique para acessar os Documentos</div>
       </div>
